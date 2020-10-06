@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid {
+            height: 96vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+
+
+            grid-gap: 0.75rem;
+        }
+
+        .item {
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            border: 0.15rem solid #333;
+            background-color: #e5a8;
+            font-size: 1.3rem;
+
+        }
+
+        .item:first-child {
+            background-color: #aaa;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            color: palegreen;
+        }
+
+
+        .item:nth-child(9) {
+            background-color: aqua;
+            grid-column: 2/4;
+            grid-row: 2/7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid {
+            /*البرنامج بوخذ اخر سطر بالمتشابهات عشان هيك انا بكتب نفس السطر اكثر من مرة وانا بجرب */
+            display: grid;
+            grid-template-columns: 200px auto 200px;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-columns: 2fr 2fr 1fr;
+            grid-gap: 0.25rem;
+
+        }
+
+        .item {
+            background-color: #aaa;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns:
+                3fr 1fr;
+
+
+        }
+
+
+        main {
+            background-color: #33aa;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+
+        }
+
+        .sidebar {
+            background-color: coral;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background-color: pink;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+
+    </div>
+
+    <div class="content">
+
+        <main>
+
+            <h3> Lorem ipsum dolor sit amet.</h3>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore hic, vitae ipsa necessitatibus
+                temporibus quas.
+            </p>
+
+
+
+        </main>
+        <aside class="sidebar">
+
+            <h3> Lorem ipsum dolor sit amet.</h3>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore hic, vitae ipsa necessitatibus
+                temporibus quas.ore hic, vitae ipsa necessitatibus
+                temporibus quas.
+            </p>
+
+        </aside>
+
+        <footer>
+
+            <h3> Lorem ipsum dolor sit amet.</h3>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore hic, vitae ipsa necessitatibus
+                temporibus quas.ore hic, vitae ipsa necessitatibus
+                temporibus quas.
+            </p>
+
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
