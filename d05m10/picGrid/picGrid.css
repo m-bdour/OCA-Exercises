@@ -1,0 +1,36 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#body {
+    background-color: #555;
+
+}
+
+.container {
+    padding-bottom: 5vh;
+
+    display: grid;
+    column-gap: 1vh;
+    row-gap: 1vw;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 30vh 30vh 30vh;
+
+
+}
+
+.num {
+    overflow: hidden;
+    box-shadow: #f8efde 0px 0px 5px 0px;
+}
+
+img {
+
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}

@@ -1,0 +1,33 @@
+body {
+
+    background-color: rgb(255, 0, 221);
+
+}
+
+.flo {
+
+    overflow: hidden;
+
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    margin: 10px;
+    float: left;
+
+
+}
+
+.nor {
+    font-weight: bolder;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    overflow-y: scroll;
+    /* Add vertical scrollbar */
+    width: 80%;
+    height: 70px;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+
+}

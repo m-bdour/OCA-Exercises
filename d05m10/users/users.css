@@ -1,0 +1,51 @@
+ * {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+ }
+
+ #body {
+     background-color: #ffffba;
+     height: 100vh;
+     width: 100vw;
+     padding: 8vh 25vw;
+ }
+
+ #container {
+     background-color: whitesmoke;
+     border-radius: 4rem;
+     box-shadow: 0px 0px 10px 0px #bbb;
+     width: 50vw;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .user {
+     margin: 1rem;
+     display: flex;
+
+ }
+
+ .users {
+     margin-top: 1rem;
+     font-weight: bolder;
+ }
+
+ .city {
+     color: #aaa;
+ }
+
+ img {
+     width: 10vh;
+     height: 10vh;
+ }
+
+ hr {
+     margin: 0rem 1rem;
+     border-top: 1px solid rgba(85, 85, 85, 0.089);
+ }
+
+ .text {
+     margin-left: 1rem;
+
+ }

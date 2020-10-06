@@ -1,0 +1,43 @@
+.hed {
+  color: rgb(39, 15, 15);
+  background-color: rgb(187, 90, 90);
+}
+
+.nava {
+  background-color: burlywood;
+
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+#artia {
+  background-color: rgb(0, 139, 69);
+}
+
+.fsec {
+  background-color: rgb(62, 108, 129);
+}
+
+.devo {
+  background-color: rgb(151, 151, 151);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 750px;
+  margin-left: 400px;
+  padding: 25px;
+}
+
+.midimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -70px;
+}
+
+.ulnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

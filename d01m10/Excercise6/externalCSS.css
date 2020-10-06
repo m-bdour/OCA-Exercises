@@ -1,0 +1,60 @@
+header {
+
+    font-weight: bolder;
+
+
+}
+
+
+.s1 {
+
+    font-weight: bolder;
+    background-color: rgb(236, 198, 171);
+}
+
+.s2 {
+
+    font-weight: bolder;
+    background-color: rgb(253, 239, 46);
+}
+
+.sec1 {
+
+    border: 2px solid black;
+    background-color: snow;
+}
+
+
+.sec2 {
+
+    border: 2px solid black;
+    background-color: snow;
+}
+
+.sec3 {
+
+    border: 2px dotted black;
+    background-color: snow;
+    color: red;
+    border-color: red;
+
+}
+
+
+.redp {
+
+    border: 2px dotted black;
+    background-color: snow;
+    color: red;
+    border-color: red;
+    margin: 0px 12px 25px 12px;
+
+
+}
+
+body {
+
+
+    background-color: rgb(251, 255, 190);
+
+}

@@ -1,0 +1,35 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+main {
+    display: flex;
+    height: 99vh;
+    width: 99vw;
+    text-align: center;
+
+}
+
+.box2 {
+    width: 50%;
+    background-color: orange;
+
+}
+
+
+
+.box4 {
+    width: 50%;
+    background-color: blue;
+
+}
+
+h1 {
+    margin-top: 50vh;
+    font-size: 7vh;
+}

@@ -1,0 +1,28 @@
+#body {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+
+    display: grid;
+
+    column-gap: 1vh;
+    row-gap: 1vw;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: 10vw 10vw;
+
+
+
+}
+
+.num {
+    background-color: yellow;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 2rem;
+
+
+}

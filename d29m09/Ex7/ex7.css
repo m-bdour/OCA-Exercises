@@ -1,0 +1,27 @@
+#header {
+  text-decoration: underline;
+  /* font-weight: bold; */
+
+  font-size: 30px;
+}
+
+.blue {
+  color: blue;
+}
+
+.pink {
+  color: rgb(255, 166, 0);
+}
+
+.pinkk {
+  color: rgb(185, 9, 9);
+  background-color: yellow;
+}
+
+.ylo {
+  color: rgb(255, 0, 0);
+}
+
+.ol {
+  list-style-type: none;
+}

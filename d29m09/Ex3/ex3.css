@@ -1,0 +1,42 @@
+.mars {}
+
+fieldset {
+  border: 2px solid black;
+  background-color: rgb(255, 255, 220);
+
+  margin: auto;
+  width: 25%;
+}
+
+.txt {
+  width: 102px;
+  margin-top: -20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.center {
+  direction: rtl;
+  padding: 10px;
+  padding-right: 160px;
+  margin: auto;
+  width: 80%;
+}
+
+.center2 {
+  padding: 10px;
+  padding-right: 160px;
+  margin: auto;
+  margin-left: 115spx;
+
+  width: 100%;
+}
+
+.sub {
+  margin: auto;
+  width: 10%;
+}
+
+.flo {
+  float: right;
+}
