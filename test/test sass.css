@@ -27,9 +27,9 @@
 
 
 
-.item {
+/* .item {
     background-color: rgb(139, 52, 52);
-}
+} */
 
 .container2 {
     display: grid;
@@ -47,78 +47,78 @@
 }
 
 .a {
-    background-color: #808080;
+    /* background-color: #808080; */
     grid-area: a;
 }
 
 .s {
-    background-color: #0000fe;
+    /* background-color: #0000fe; */
     grid-area: s;
 
 }
 
 .d {
-    background-color: #add9e6;
+    /* background-color: #add9e6; */
     grid-area: d;
 
 }
 
 .f {
-    background-color: #ffff00;
+    /* background-color: #ffff00; */
     grid-area: f;
 
 }
 
 .g {
-    background-color: #ffff00;
+    /* background-color: #ffff00; */
     grid-area: g;
 
 }
 
 .h {
-    background-color: #ffff00;
+    /* background-color: #ffff00; */
     grid-area: h;
 
 }
 
 .j {
-    background-color: #add9e6;
+    /* background-color: #add9e6; */
     grid-area: j;
 
 }
 
 .k {
-    background-color: #0000fe;
+    /* background-color: #0000fe; */
     grid-area: k;
 
 }
 
 .l {
-    background-color: #fea500;
+    /* background-color: #fea500; */
     grid-area: l;
 
 }
 
 .z {
-    background-color: #fea500;
+    /* background-color: #fea500; */
     grid-area: z;
 
 }
 
 .x {
-    background-color: #fea500;
+    /* background-color: #fea500; */
     grid-area: x;
 
 }
 
 .c {
-    background-color: #fea500;
+    /* background-color: #fea500; */
     grid-area: c;
 
 }
 
 .v {
-    background-color: #808080;
+    /* background-color: #808080; */
     grid-area: v;
 
 

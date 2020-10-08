@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid MinMax</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, MinMax(350px, 1fr));
+            /*ون عشان لما تصغر الشاشة يوصل لدرجة ابعاد العامود ما تقل عنه وبدل ما يظلو على نفس السطر ينزلهم سطر جديد*/
+        }
+
+        .item {
+            background-color: #a3a3a3;
+            border: #333 1.5px solid;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item"> item 3</div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
