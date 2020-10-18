@@ -1,0 +1,23 @@
+#buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10vw)[4];
+      grid-template-columns: repeat(4, 10vw);
+  -ms-grid-rows: (10vh)[5];
+      grid-template-rows: repeat(5, 10vh);
+}
+
+#buttons button {
+  font-size: 150%;
+}
+
+#OutPut {
+  background-color: #a3a3a3;
+  width: 50vh;
+  height: 3rem;
+  border-radius: 1vh;
+  font-size: 1.5rem;
+  padding-top: 2vh;
+  padding-left: 2vh;
+}
+/*# sourceMappingURL=calculator.css.map */

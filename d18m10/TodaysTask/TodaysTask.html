@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label {
+            margin: 3vh 1vw;
+        }
+
+        input {
+            margin: 1vh 1vw;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1> Cover letter maker </h1>
+    </header>
+    <section>
+
+        <form>
+            <div>
+
+                <label for="fname">Job Title:</label><br>
+                <input type="text" id="JobTitle" name="fname" value=" "><br>
+
+
+                <label for="lname">Company:</label><br>
+                <input type="text" id="Company" name="lname" value=" "><br><br>
+
+                <label for="fname">Enter job duties:</label><br>
+                <input type="text" id="duties" name="fname" value=" "><br>
+
+
+                <label for="lname">enter main
+                    area of job focus:</label><br>
+                <input type="text" id="jobFocus" name="lname" value=" "><br><br>
+            </div>
+
+            <div>
+
+
+                <label for="lname">degree:</label><br>
+                <input type="text" id="degree" name="lname" value=" "><br><br>
+
+
+                <label for="fname">major:</label><br>
+                <input type="text" id="major" name="fname" value=" "><br>
+
+
+                <label for="lname">number years of work experience:</label><br>
+                <input type="text" id="experience" name="lname" value=" "><br><br>
+
+
+                <label for="fname">enter industry type:</label><br>
+                <input type="text" id="industry" name="fname" value=" "><br>
+            </div>
+
+
+            <input onclick="submitCover()" type="submit" value="Submit">
+        </form>
+
+
+
+        <p id="CoverLetter">
+
+        </p>
+
+    </section>
+
+
+
+    <script src="TodayTask.js"></script>
+</body>
+
+</html>
