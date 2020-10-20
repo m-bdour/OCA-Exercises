@@ -1,47 +1,11 @@
-var Numbers = document.getElementsByClassName('Numbers').value;
-var checkBox = document.getElementById('checkBox').value;
-var Password = document.getElementsByClassName('Password').value;
-var CreateAccount = document.getElementById('CreateAccount').value;
-var name = document.getElementsByClassName('name').value;
-
-
-var nameObject = {
-
-    draw: function () {
-        var name = document.getElementsByClassName('name').value;
-        return name.replace(/[a-z]{4,}/);
-    }
-
-}
-
-console.log(draw);
-
-
-function validateForm() {
-    var x, text;
-    x = document.getElementById("name").value;
-
-    if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid";
-    } else {
-        text = "Input OK";
-    }
-    document.getElementById("demo").innerHTML = text;
-
-}
-
-
-
 function formValidation() {
-    var uid = document.registration.NameName;
-    var uzip = document.registration.NumberName;
-    var uemail = document.registration.EmailName;
-    var passid = document.registration.PasswordName;
-
-
-    var uname = document.registration.NameName;
+    var uid = document.registration.userid;
+    var passid = document.registration.passid;
+    var uname = document.registration.username;
     var uadd = document.registration.address;
     var ucountry = document.registration.country;
+    var uzip = document.registration.zip;
+    var uemail = document.registration.email;
     var umsex = document.registration.msex;
     var ufsex = document.registration.fsex;
     if (userid_validation(uid, 5, 12)) {
@@ -63,10 +27,6 @@ function formValidation() {
 }
 
 
-
-
-
-
 function userid_validation(uid, mx, my) {
     var uid_len = uid.value.length;
     if (uid_len == 0 || uid_len >= my || uid_len < mx) {
@@ -76,7 +36,6 @@ function userid_validation(uid, mx, my) {
     }
     return true;
 }
-
 
 function passid_validation(passid, mx, my) {
     var passid_len = passid.value.length;

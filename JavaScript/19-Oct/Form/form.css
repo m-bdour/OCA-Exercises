@@ -53,12 +53,19 @@
   color: lavender;
 }
 
-.Form .CreateAccount {
+.Form #CreateAccount {
   color: lavender;
   background-color: #51861b;
   font-size: 1.3rem;
   font-weight: bold;
   padding: 10px;
   border-radius: 15px;
+  float: right;
+}
+
+.Form #CreateAccount:hover {
+  background-color: #477717;
+  -webkit-box-shadow: 0px 0px 3px #aaa;
+          box-shadow: 0px 0px 3px #aaa;
 }
 /*# sourceMappingURL=form.css.map */

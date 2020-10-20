@@ -22,23 +22,31 @@
 
             <div class="inputs">
 
-                <form action="">
+                <form name="myForm">
 
-                    <input type="text" class='bar name' placeholder="Name">
-                    <input type="text" class='bar Number' placeholder="Phone Number">
-                    <input type="text" class='bar Email' placeholder="Email">
-                    <input type="text" class='bar Password' placeholder="Password">
+                    <input type="text" class='bar ' id="name" placeholder="Name" name="NameName">
+                    <input type="text" class='bar Numbers' placeholder="Phone Number" name="NumberName">
+                    <input type="text" class='bar Email' placeholder="Email" name="EmailName">
+                    <input type="text" class='bar Password' placeholder="Password" name="PasswordName">
 
-                    <input class="check" type="checkbox" id="checkBox" disabled>
+                    <input type="checkbox" class="check" id="checkBox" name="checkBoxName">
                     <label class="CheckLabel" for="checkBox">
                         I agree to the
-                        <a href="#">Terms and Condition</a>
+                        <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/?sscid=a1k4_j7dgb">Terms
+                            and Condition</a>
                         and
-                        <a href="#">Privacy Policy</a>
+                        <a
+                            href="https://www.privacypolicies.com/blog/privacy-policy-template/#:~:text=Conclusion-,What%20is%20a%20Privacy%20Policy%3F,or%20sold%20to%20third%20parties.">Privacy
+                            Policy</a>
                     </label>
 
                     <br /> <br />
-                    <button class='CreateAccount'>Create Account</button>
+                    <button name="submit" type="button" ID='CreateAccount' onclick=validateForm()>Create
+                        Account</button>
+                    <input type="submit" name="submit" value="Submit" />
+
+                    <br /> <br />
+                    <p id="demo" style="color: aliceblue; text-shadow: 0px 0px 5px 3px #333;"> </p>
 
                 </form>
 

@@ -1,5 +1,5 @@
 .Container {
-    
+
     justify-content: center;
     align-items: center;
 }
@@ -15,11 +15,11 @@
     width: 50vw;
     height: auto;
 
- position: absolute;
- top: 10vh;
- right: 25vw;
+    position: absolute;
+    top: 10vh;
+    right: 25vw;
 
- padding: 0px 2vw 2vh 1vw;
+    padding: 0px 2vw 2vh 1vw;
 
     background-color: #333;
     box-shadow: 0px 0px 2px 0px #111;
@@ -43,15 +43,15 @@
             padding-left: 15px;
         }
 
-      
+
 
     }
 
     label {
         color: lavender;
     }
- 
-    .CreateAccount {
+
+    #CreateAccount {
 
         color: lavender;
         background-color: rgb(81, 134, 27);
@@ -59,8 +59,13 @@
         font-weight: bold;
         padding: 10px;
         border-radius: 15px;
+        float: right;
+
+        &:hover {
+            background-color: rgb(71, 119, 23);
+            box-shadow: 0px 0px 3px #aaa;
+        }
 
     }
 
 }
-
