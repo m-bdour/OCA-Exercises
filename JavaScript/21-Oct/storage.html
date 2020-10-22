@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            justify-content: center;
+        }
+
+        form {
+            background-color: #ff55;
+            width: fit-content;
+            height: auto;
+            justify-content: center;
+            margin: 4vh 3vw;
+            padding: 3vh 3vw;
+            box-shadow: 0px 0px 5px 2px #aaa;
+        }
+
+        .output {
+
+            background-color: #ff55;
+            margin: 4vh 3vw;
+            padding: 3vh 3vw;
+            box-shadow: 0px 0px 5px 2px #aaa;
+            width: fit-content;
+            height: fit-content;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <label for="key">key</label>
+        <input type="text" id="key">
+        <br /> <br />
+        <label for="value">value</label>
+        <input type="text" id="value">
+        <br /> <br />
+        <button onclick="clearFun()">clear</button>
+        <button onclick="localFun()">local Submit</button>
+        <button onclick="SessionFun()">Session Submit</button>
+
+    </form>
+
+    <div class="output">
+
+        <div class="localbox">
+
+            <h2> Local storage
+            </h2>
+            <ul class='localText'>
+            </ul>
+
+
+        </div>
+
+        <div class="SessionBox">
+            <h2> Sessional storage
+            </h2>
+            <ul class='SessionText'>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="storage.js"></script>
+</body>
+
+</html>

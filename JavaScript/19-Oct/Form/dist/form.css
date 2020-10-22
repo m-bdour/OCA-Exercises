@@ -25,18 +25,21 @@
   margin: 3vh 2vw 3vh 2vw;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 .Form .inputs .bar {
   border-radius: 2rem;
-  width: 45vw;
+  width: 40vw;
   height: 2.5rem;
   margin: 1vh 0vw;
   font-size: 1rem;
-  padding-left: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .Form label {
+  display: inline;
   color: lavender;
+  font-size: 1rem;
 }
 .Form #CreateAccount {
   color: lavender;
@@ -50,4 +53,14 @@
 .Form #CreateAccount:hover {
   background-color: #477717;
   box-shadow: 0px 0px 3px #aaa;
+}
+
+.span {
+  position: relative;
+  left: 10px;
+  top: -45px;
+  margin-right: 10vw;
+  color: #666f05;
+  font-size: 25px;
+  font-weight: bolder;
 }

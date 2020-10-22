@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/baa1e55646.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,21 +25,30 @@
 
                 <form name="myForm">
 
-                    <input type="text" class='bar ' id="name" placeholder="Name" name="NameName">
-                    <input type="text" class='bar Numbers' placeholder="Phone Number" name="NumberName">
-                    <input type="text" class='bar Email' placeholder="Email" name="EmailName">
-                    <input type="text" class='bar Password' placeholder="Password" name="PasswordName">
+                    <input onchange="checkName()" type="text" class='bar ' id="Name" placeholder=" Name"
+                        name="NameName">
 
-                    <input type="checkbox" class="check" id="checkBox" name="checkBoxName">
-                    <label class="CheckLabel" for="checkBox">
-                        I agree to the
-                        <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/?sscid=a1k4_j7dgb">Terms
-                            and Condition</a>
-                        and
-                        <a
-                            href="https://www.privacypolicies.com/blog/privacy-policy-template/#:~:text=Conclusion-,What%20is%20a%20Privacy%20Policy%3F,or%20sold%20to%20third%20parties.">Privacy
-                            Policy</a>
-                    </label>
+                    <span class="span fas fa-user"></span>
+                    <input type="text" class='bar Numbers' placeholder="Phone Number" name="NumberName">
+                    <span class="span fas fa-phone-alt"></span>
+                    <input type="text" class='bar Email' placeholder="Email" name="EmailName">
+                    <span class="span fas fa-envelope"></span>
+                    <input type="text" class='bar Password' placeholder="Password" name="PasswordName">
+                    <span class="span fas fa-lock"></span>
+
+                    <div>
+                        <input type="checkbox" class="check" id="checkBox" name="checkBoxName">
+                        <label class="CheckLabel" for="checkBox">
+                            I agree to the
+                            <a
+                                href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/?sscid=a1k4_j7dgb">Terms
+                                and Condition</a>
+                            and
+                            <a
+                                href="https://www.privacypolicies.com/blog/privacy-policy-template/#:~:text=Conclusion-,What%20is%20a%20Privacy%20Policy%3F,or%20sold%20to%20third%20parties.">Privacy
+                                Policy</a>
+                        </label>
+                    </div>
 
                     <br /> <br />
                     <button name="submit" type="button" ID='CreateAccount' onclick=validateForm()>Create
@@ -49,6 +59,7 @@
                     <p id="demo" style="color: aliceblue; text-shadow: 0px 0px 5px 3px #333;"> </p>
 
                 </form>
+
 
 
             </div>

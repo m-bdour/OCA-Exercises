@@ -42,8 +42,8 @@ function () {
 var Trainer = new person(101, 'Mohammad Shwaiki', '27');
 var Student = new person(114, 'Mohammad Bdour', '23');
 Student.Game = 'Dark Souls';
-document.write('<br/>', 'My name is: ', Trainer.name, '  ', ' , ', ' with ', Trainer.id, ' id ', ' , ', 'and age is:', Trainer.age);
-document.write(person.Greeting(), '<br/>', 'My name is: ', Student.name, '  ', ' , ', ' with ', Student.id, ' id ', ' , ', 'and age is:', Student.age, '. ', 'also the most game i have spent time playing with is ', Student.Game);
+document.write('<br/>', 'My name is: ', Trainer.name, '  ', ' , ', ' with ', Trainer.id, ' id ', ' , ', 'and ', Trainer.age, '<br/>', '<br/>');
+document.write(Student.Greeting(), '<br/>', 'My name is: ', Student.name, '  ', ' , ', ' with ', Student.id, ' id ', ' , ', 'and age is:', Student.age, '. ', 'also the most game i have spent time playing with is ', Student.Game, '<br/>', '<br/>');
 
 var anime =
 /*#__PURE__*/
@@ -68,8 +68,8 @@ function () {
 
 var OnePiece = new anime('One Piece', 'Lofy', 'Adventure');
 var Akame = new anime('Acame ga kill', 'Akame', 'Action');
-document.write(OnePiece);
-document.write(Akame.name, Akame.Main, Akame.Genre);
+document.write(OnePiece, '<br/>', '<br/>');
+document.write(Akame.name, Akame.Main, Akame.Genre, '<br/>', '<br/>');
 
 var Animal =
 /*#__PURE__*/
