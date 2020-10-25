@@ -5,11 +5,11 @@
 }
 
 
-.container {
+.container { 
     display: grid;
     column-gap: 4vh;
     row-gap: 1vw;
-    grid-template-columns: repeat(12fr, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 7vh 20vh 20vh 20vh 20vh 7vh;
     height: 100vh;
     width: 100vw;

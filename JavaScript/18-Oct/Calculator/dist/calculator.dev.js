@@ -1,86 +1,92 @@
 "use strict";
 
-function clears() {
-  document.getElementById('OutPut').value = '';
-}
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function Equa() {
+input = function input(inputValue) {
+  if (OutPut.value != 0) {
+    document.getElementById('OutPut').value += inputValue;
+  } else {
+    document.getElementById('OutPut').value = inputValue;
+  }
+};
+
+Equa = function Equa(result) {
+  //To get the result
   var x = document.getElementById("OutPut").value;
-  var a = parseInt(x);
-  var y = '(5 + 3) / 2';
-  Number(y);
-  document.getElementById('consol').textContent = y;
-  document.getElementById('OutPut').innerText = a;
-}
+  console.log(x); // For ABS
 
-function leftK() {
-  document.getElementById('OutPut').value += '(';
-}
+  var y = x.replace('abs(', "Math.abs("); //Power
 
-function wrightK() {
-  document.getElementById('OutPut').value += ')';
-}
+  y = y.replace('p(', "Math.pow("); //For factorial
 
-function percent() {
-  document.getElementById('OutPut').value += '%';
-}
+  Factorial = function Factorial(n) {
+    var ans = 1;
 
-function Seven() {
-  document.getElementById('OutPut').value += '7';
-}
+    for (var i = 2; i <= n; i++) {
+      ans = ans * i;
+    }
 
-function Eight() {
-  document.getElementById('OutPut').value += '8';
-}
+    return ans;
+  };
 
-function Nine() {
-  document.getElementById('OutPut').value += '9';
-}
+  y = y.replace('!(', 'Factorial('); //test the result
 
-function divide() {
-  document.getElementById('OutPut').value += '/';
-}
+  try {
+    var result = eval(y);
+  } catch (e) {} finally {} //If their is an error
 
-function Four() {
-  document.getElementById('OutPut').value += '4';
-}
 
-function Five() {
-  document.getElementById('OutPut').value += '5';
-}
+  var test;
 
-function Six() {
-  document.getElementById('OutPut').value += '6';
-}
+  if (_typeof(result) === _typeof(test)) {
+    document.getElementById("errors").innerText = 'Syntax Error';
+  } else {
+    document.getElementById("errors").innerText = ' ';
+  } // print the result in the Answer felid
 
-function Multi() {
-  document.getElementById('OutPut').value += '*';
-}
 
-function One() {
-  document.getElementById('OutPut').value += '1';
-}
+  document.getElementById("Results").innerText = "Answer:  ".concat(result); //To write the history without repeating
 
-function Two() {
-  document.getElementById('OutPut').value += '2';
-}
+  if (result != x) {
+    document.getElementById("history").innerHTML += "<p class='Equation'> ".concat(x, "  </p>\n <p class='Answer'>= ").concat(result, "  </p>\n "); // Clear the Output
 
-function Three() {
-  document.getElementById('OutPut').value += '3';
-}
+    document.getElementById("OutPut").value = '0';
+  } // print the last answer in the OutPut
 
-function Mines() {
-  document.getElementById('OutPut').value += '-';
-}
 
-function Zero() {
-  document.getElementById('OutPut').value += '0';
-}
+  Answer = function Answer() {
+    if (OutPut.value != 0) {
+      document.getElementById('OutPut').value += result;
+    } else {
+      document.getElementById('OutPut').value = result;
+    }
+  };
 
-function Dota() {
-  document.getElementById('OutPut').value += '.';
-}
+  clears = function clears(x) {
+    document.getElementById(x).value = '0';
+    document.getElementById(x).innerHTML = ' ';
+    document.getElementById("errors").innerText = ' ';
+    document.getElementById("Results").innerText = 'Answer:';
+    result = 0;
+  };
+};
 
-function Blus() {
-  document.getElementById('OutPut').value += '+';
-}
+Delete = function Delete(x) {
+  //delete the error statement
+  document.getElementById("errors").innerText = ' ';
+  x = document.getElementById('OutPut').value;
+
+  if (x != 'undefined' && x != 'Infinity') {
+    x = x.slice(0, -1);
+    document.getElementById('OutPut').value = x;
+  } // delete full word of undefined or Infinity
+  else {
+      document.getElementById('OutPut').value = ' ';
+    }
+}; //Dark Mood
+
+
+darkLightMode = function darkLightMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+};
