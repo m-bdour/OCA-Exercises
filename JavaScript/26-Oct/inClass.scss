@@ -1,0 +1,96 @@
+.mainContainer {
+
+    display: flex;
+    flex-direction: row;
+
+    .Container {
+        background-color: #6490cd;
+        width: 50vw;
+        height: 100vh;
+
+
+        .rectangle {
+            background-color: #243c81;
+            width: 40vw;
+            height: 20vw;
+
+            .hiddenCircle {
+                background-color: #6490cd;
+                width: 30vw;
+                height: 30vw;
+
+                .firstCircle {
+                    background-color: #243c81;
+
+                    .centerCircle {
+                        background-color: #edb850;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Circle {
+        border-radius: 1000px;
+    }
+
+    .fifty {
+        width: 50%;
+        height: 50%;
+    }
+
+    .container2 {
+        background-color: #612f6c;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+        div {
+
+            width: 10vw;
+            height: 10vw;
+            background-color: #f7eb7d;
+            margin: 2px;
+            border-radius: 0 0 10vw 10vw;
+        }
+
+        .centerRec {
+            position: relative;
+            top: -10vw;
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+    #btn1 {
+        height: 5vh;
+        width: 50vw;
+        margin-bottom: 2px;
+        background-color: #6490cd;
+        border-radius: 100px 100px 0px 0px;
+    }
+
+    #btn2 {
+        border-radius: 100px 100px 0px 0px;
+        background-color: #612f6c;
+        margin-bottom: 2px;
+        width: 50vw;
+        height: 5vh;
+
+    }
+}
